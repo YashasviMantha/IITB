@@ -26,9 +26,4 @@ output = neuron.run(input)
 
 print(output)
 
-
-
-
-
-
 print('End Prog --Debug Stat')
