@@ -15,7 +15,7 @@ class matrix:
         print(self.Matrix)
 
 obj = matrix(2,2)
-
+print(obj.Matrix)
 
 
 
