@@ -12,13 +12,16 @@ class prepceptron:
         self.weights = np.random.rand(number_inputsL,1)
         self.threshold = 0
         self.fire = False
-        self.learning_rate = 0.5
+        # self.learning_rate = 0.5
         self.input_train = [
-            [0,0],
-            [0,1],
-            [1,0],
+            [0,0,0],
+            [0,0,1],
+            [0,1,0],
+            [0,1,1],
+            [1,0,1],
+            [1,1,0]
                 ]
-        self.output_train = [0,1,1]
+        self.output_train = [0,1,1,0,1,0,0,1]
 
 
     def start(self, inputL = [], *args):
@@ -45,9 +48,10 @@ class prepceptron:
 
 
 
-neuron = prepceptron(2,0.05)
+neuron = prepceptron(3,0.05)
 # neuron.train(0.12)
-input_test = [1,1]
+input_test = [1,1,1]
+
 print("initial Weights: --")
 print("Weights = \t",end='')
 for i in neuron.weights:
