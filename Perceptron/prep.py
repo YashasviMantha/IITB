@@ -13,8 +13,12 @@ class prepceptron:
         self.threshold = 0
         self.fire = False
         # self.learning_rate = 0.5
-        self.input_train = []
-        self.output_train = []
+        self.input_train = [
+            [0,0],
+            [0,1],
+            [1,0],
+                ]
+        self.output_train = [0,1,1]
 
 
     def start(self, inputL = [], *args):
@@ -38,40 +42,43 @@ class prepceptron:
 
         for i in range(len(self.weights)):
            self.weights[i] =+ error * input_array[i]
+        self.info(input_array)
+
+    def info(self,inputL):
+        print("------------------------------------------------------------------------")
+        print("\nUsing Step function as activator\n")
+        print("input = \t",inputL,end='\n\n')
+        print("Weights = \t",end='')
+        for i in self.weights:
+            print(i,end='')
+        print("\n\nBias = \t\t",self.biase,end='\n\n')
+        print("")
+        print("Output = \t",self.output,end='\n\n')
+        print("Statue = \t", self.fire,end='\n\n')
+        print("------------------------------------------------------------------------")
 
 
 
-neuron = prepceptron(3,0.05)
-# neuron.train(0.12)
-input_test = [1,1,1]
+def main():
+    neuron = prepceptron(2,0.05)
+    input_test = [1,1,1]
 
-print("initial Weights: --")
-print("Weights = \t",end='')
-for i in neuron.weights:
-    print(i,end='')
-
-for i in range(len(neuron.input_train)):
-    neuron.train(neuron.input_train[i],neuron.output_train[i])
+    neuron.start(input_test)
+    neuron.step_Activator(0.54)
+    print("initial Weights: --")
+    print("Weights = \t",end='')
+    for i in neuron.weights:
+        print(i,end='')
+    print()
+    for i in range(len(neuron.input_train)):
+        neuron.train(neuron.input_train[i],neuron.output_train[i])
     print("input = \t",neuron.input_train[i],end='\n\n')
     print("Weights = \t",end='')
     for i in neuron.weights:
         print(i,end='')
 
-neuron.start(input_test)
-neuron.step_Activator(0.54)
 
-
-print("\nUsing Step function as activator\n")
-
-print("input = \t",input_test,end='\n\n')
-print("Weights = \t",end='')
-for i in neuron.weights:
-    print(i,end='')
-print("\n\nBias = \t\t",neuron.biase,end='\n\n')
-print("")
-print("Output = \t",neuron.output,end='\n\n')
-print("Statue = \t", neuron.fire,end='\n\n')
-
-
+if(__name__ == "__main__"):
+    main()
 
 print('\nEnd Prog --Debug Stat')
