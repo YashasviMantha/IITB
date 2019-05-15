@@ -13,15 +13,8 @@ class prepceptron:
         self.threshold = 0
         self.fire = False
         # self.learning_rate = 0.5
-        self.input_train = [
-            [0,0,0],
-            [0,0,1],
-            [0,1,0],
-            [0,1,1],
-            [1,0,1],
-            [1,1,0]
-                ]
-        self.output_train = [0,1,1,0,1,0,0,1]
+        self.input_train = []
+        self.output_train = []
 
 
     def start(self, inputL = [], *args):
