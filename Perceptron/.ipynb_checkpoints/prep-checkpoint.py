@@ -35,7 +35,7 @@ class prepceptron:
             self.fire = False
 
     def train(self, input_array,output_train_local):
-        self.start(input_array)
+        output_local = self.start(input_array)
         error = self.output - output_train_local
         print(self.output, output_train_local)
 
