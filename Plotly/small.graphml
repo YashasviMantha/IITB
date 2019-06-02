@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key attr.name="weight" attr.type="double" for="edge" id="d0"/>
+<graph edgedefault="undirected"><node id="id_0"/>
+<node id="ta"/>
+<node id="id_2"/>
+<node id="pa"/>
+<node id="id_4"/>
+<node id="ml"/>
+<node id="id_6"/>
+<node id="hi"/>
+<node id="id_8"/>
+<node id="mr"/>
+<node id="id_10"/>
+<node id="ne"/>
+<node id="id_12"/>
+<node id="sa"/>
+<node id="id_14"/>
+<node id="gu"/>
+<node id="bn"/>
+<node id="te"/>
+<edge source="id_0" target="ta">
+  <data key="d0">0.145313</data>
+</edge>
+<edge source="id_0" target="id_2">
+  <data key="d0">0.005953</data>
+</edge>
+<edge source="id_0" target="te">
+  <data key="d0">0.147087</data>
+</edge>
+<edge source="id_2" target="pa">
+  <data key="d0">0.142047</data>
+</edge>
+<edge source="id_2" target="id_4">
+  <data key="d0">0.013033</data>
+</edge>
+<edge source="id_4" target="ml">
+  <data key="d0">0.165216</data>
+</edge>
+<edge source="id_4" target="id_6">
+  <data key="d0">0.019324</data>
+</edge>
+<edge source="id_6" target="hi">
+  <data key="d0">0.210634</data>
+</edge>
+<edge source="id_6" target="id_8">
+  <data key="d0">0.016691</data>
+</edge>
+<edge source="id_8" target="mr">
+  <data key="d0">0.146529</data>
+</edge>
+<edge source="id_8" target="id_10">
+  <data key="d0">0.016884</data>
+</edge>
+<edge source="id_10" target="ne">
+  <data key="d0">0.102035</data>
+</edge>
+<edge source="id_10" target="id_12">
+  <data key="d0">0.02514</data>
+</edge>
+<edge source="id_12" target="sa">
+  <data key="d0">0.105757</data>
+</edge>
+<edge source="id_12" target="id_14">
+  <data key="d0">0.013043</data>
+</edge>
+<edge source="id_14" target="gu">
+  <data key="d0">0.11</data>
+</edge>
+<edge source="id_14" target="bn">
+  <data key="d0">0.1174</data>
+</edge>
+</graph></graphml>
