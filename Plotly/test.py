@@ -24,7 +24,7 @@ clade_names_fix(Tree)
 G = Phylo.to_networkx(Tree)
 
 # networkx.write_graphml(G, 'small.graphml')
-A = networkx.nx_pydot.to_pydot(G)
+A = networkx.nx_agraph.to_agraph(G)
 A.render('a.gv',view=True)
 
-A.write_png('a.png')
+# A.write_png('a.png')
