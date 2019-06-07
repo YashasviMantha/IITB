@@ -1,3 +1,3 @@
 {
-    "python.dataScience.jupyterServerURI": "local"
+    "python.dataScience.jupyterServerURI": "http://10.129.2.170:5331/?token=da2a27d29585b3800414932569fa8236c08ab28f28e62896"
 }
