@@ -31,3 +31,5 @@ for file_i in tqdm(files):
     single_file.close()
 
 distance_file.close()
+
+#Last file
